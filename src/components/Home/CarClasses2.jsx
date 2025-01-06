@@ -2,7 +2,7 @@ import React from 'react'
 
 export const CarClasses2 = () => {
     return (<>
-        <section className="bg-white border-top mt-70">
+        <section className="bg-white mt-70">
             <div className="container car-classes">
                 <div className="title-box d-flex">
                     <h2 className="title">Car Classes and Rates</h2>

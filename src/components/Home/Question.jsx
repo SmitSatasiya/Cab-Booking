@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import useOnScreen from '../Hooks/Animation';
 
 const Question = () => {
+    const [sectionRef, isVisible] = useOnScreen(0.3);
     const [activeAccordion, setActiveAccordion] = useState(null);
 
     const accordionData = [
@@ -43,7 +45,7 @@ const Question = () => {
     return (
         <div className="main-question">
             <div className="container-sub">
-                <div className="box-ques">
+                <div ref={sectionRef} className={`box-ques ${isVisible ? 'fadeInUp' : ''}`}>
                     <div className="ques-haeder">
                         <h2>Frequently Asked Questions</h2>
                     </div>

@@ -1,7 +1,15 @@
 @media only screen and (min-width:1400px) {
     .container {
         width: 1400px;
+    }
 
+    .container-sub {
+        max-width: 1170px;
+        width: 100%;
+        padding-right: var(--bs-gutter-x, .75rem);
+        padding-left: var(--bs-gutter-x, .75rem);
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .navbar {
@@ -34,6 +42,7 @@
 
 
 }
+
 @media only screen and (max-width:1024px) {
     .nav {
         display: none;
@@ -60,11 +69,13 @@
         font-size: 24px;
         font-weight: 500;
     }
-    .car-boxs{
+
+    .car-boxs {
 
         justify-content: space-between;
     }
-    .car-box{
+
+    .car-box {
         min-width: 45%;
         margin-left: 0px !important;
     }
@@ -87,7 +98,8 @@
     .car-classes .title {
         font-size: 30px;
     }
-    .car-box{
+
+    .car-box {
         min-width: 48%;
     }
 }
@@ -105,10 +117,12 @@
     .car-classes .title {
         font-size: 25px;
     }
-    .car-boxs{
+
+    .car-boxs {
         justify-content: center;
     }
-    .car-box{
+
+    .car-box {
 
         min-width: 80%;
     }

@@ -1,13 +1,15 @@
 import React from 'react'
+import useOnScreen from '../components/Hooks/Animation';
 
 export const Footer = () => {
+    const [sectionRef, isVisible] = useOnScreen(0.3);
+
     return (
         <>
-            <section className='section bg-black'>
-                <div className="container">
+            <section className='section bg-black main-footer'>
+                <div className="container-sub">
                     <div className="footer">
-                        
-                        <div className="footer-top d-flex wrap">
+                        <div ref={sectionRef} className={`footer-top d-flex wrap ${isVisible ? 'fadeInUp' : ''}`}>
                             <div className="logo d-flex align-center white">
                                 <div className="img-box">
                                     <img src="/images/icons/white_on_trans.png" alt="logo" loading='lazy' />
@@ -53,7 +55,7 @@ export const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="footer-middle d-flex wrap">
+                        <div ref={sectionRef} className={`footer-middle d-flex wrap ${isVisible ? 'fadeInUp' : ''}`}>
                             <div className="list-box">
                                 <div className="list-title">
                                     <h4 className='white'>Company</h4>
