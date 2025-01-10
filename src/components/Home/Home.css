@@ -166,3 +166,151 @@
   transition: all .25s cubic-bezier(.02, .01, .47, 1);
   transform: translateY(-5px);
 }
+
+/* CarClasses2 */
+
+/* ***********************
+    Services Box
+*************************/
+.car-animation {
+  position: relative;
+}
+
+.services-container {
+
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+
+.services-container .service-list {
+
+  margin-top: 60px;
+  justify-content: space-evenly;
+}
+
+.services-container .service {
+
+  width: 22%;
+
+}
+
+.services-container .service a {
+  text-decoration: none;
+}
+
+.services-container .service:nth-child(1) {
+  margin-top: 50px;
+}
+
+.services-container .service:nth-child(3) {
+  margin-top: 50px;
+}
+
+.services-container .services-box {
+
+  background-color: #ffffff;
+  border-radius: 5px;
+  border-bottom: 4px solid transparent;
+  transition: all 0.15s ease-in-out;
+  text-align: center;
+  padding: 70px 15px 50px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.services-container .services-box:hover {
+  box-shadow: 0px 8px 20px rgba(27, 27, 27, 0.08);
+  border-bottom: 4px solid #FDC501;
+}
+
+.services-container h3 {
+  margin-top: 45px;
+}
+
+.services-container h3 a {
+
+  font-size: 25px;
+  color: #3E4958;
+}
+
+/* ********************
+  price and classes
+************************/
+.car-animation2 {
+  padding-bottom: 450px;
+
+}
+
+.price-main-container {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+}
+
+.price-container {
+  max-width: 85%;
+  margin-top: 50px;
+}
+
+.price-container .price-box {
+  background-color: var(--white);
+  padding: 55px 40px 70px;
+  border-radius: 5px;
+  transition: all 0.15s ease-in-out;
+  box-shadow: 0px 8px 20px rgba(27, 27, 27, 0.08);
+
+}
+
+.price-container .pricing {
+  flex-direction: column;
+  align-items: center;
+}
+
+.price-container .pricing-image {
+  margin-top: 23px;
+  max-width: 146px;
+  height: 56px;
+}
+
+.price-container .pricing-title {
+  margin-top: 45px;
+  color: #3E4958;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.price-container .pricing-text {
+  margin-top: 22px;
+  color: #767E88;
+  line-height: 1.333;
+  font-weight: 400;
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.price-container .pricing-price {
+  margin-top: 23px;
+  font-weight: bold;
+}
+
+.pricing-value {
+  font-size: 48px;
+  color: #FDC501;
+
+}
+
+.pricing-postfix {
+  color: #FDC501;
+  font-size: 24px;
+}
